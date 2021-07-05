@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^prayer_request/?$ api.php
+RewriteRule ^prayer_request/([0-9]+)?$ api.php?id=$1

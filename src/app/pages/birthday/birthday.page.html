@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Aniversariantes do Mês</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-label>NÃO ESQUEÇA DE PARABENIZAR O(A):</ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none" *ngFor="let c of aniversario_mes">
+        <ion-label>
+          <div><p>{{c.nome}} - Data:&nbsp;{{c.aniversario}}</p></div>
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="end" (click)="fecharModal()">Fechar</ion-button>
+    <ion-title>{{atualizar ? 'Atualizar Membro' : 'Novo Membro'}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="enviando(f)">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input [(ngModel)]="dados.nome" name="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Usuário</ion-label>
+      <ion-input [(ngModel)]="dados.username" name="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Aniversário</ion-label>
+      <ion-input [(ngModel)]="dados.aniversario" name="aniversario" type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input [(ngModel)]="dados.fone" name="fone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input [(ngModel)]="dados.email" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nivel (Definir como user ou admin)</ion-label>
+      <ion-input [(ngModel)]="dados.nivel" name="nivel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input ngModel name="password"></ion-input>
+    </ion-item>
+    <ion-button fill="outline" expand="block" type="submit">{{atualizar ? 'Atualizar' : 'Cadastrar'}}</ion-button>
+  </form>
+
+</ion-content>

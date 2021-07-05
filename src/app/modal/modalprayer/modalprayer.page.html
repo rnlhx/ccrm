@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="end" (click)="fecharModal()">Fechar</ion-button>
+    <ion-title>Faça seu pedido de oração</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #f="ngForm" (ngSubmit)="enviando(f)">
+    <ion-item>
+      <ion-label position="floating">Orar Pelo</ion-label>
+      <ion-input [ngModel] name="nome_pessoa"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Motivo do pedido</ion-label>
+      <ion-input [ngModel] name="descricao"></ion-input>
+    </ion-item>
+    <ion-button fill="outline" expand="block" type="submit">Enviar Pedido</ion-button>
+  </form>
+
+</ion-content>

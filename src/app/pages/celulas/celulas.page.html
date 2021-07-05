@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title><h6>CÉLULAS E GRUPOS PEQUENOS</h6></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines="none">
+    <ion-item-sliding *ngFor="let c of celula">
+      <ion-item-options>
+        <ion-item-option color="danger" (click)="remover(c.id)">Deletar</ion-item-option>
+      </ion-item-options>
+      <ion-item size="full">
+          <ion-card class="card-center">
+              <ion-card-content>
+                <ion-item lines="none">
+                  <ion-icon name="book" slot="start" color="warning"></ion-icon>
+                  <ion-label>
+                    <div>Data: {{c.data}}</div>
+                    <div>Horário: {{c.horario}}</div>
+                    <div>Local: {{c.local}}</div>
+                  </ion-label>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+        </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="novaCelula()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

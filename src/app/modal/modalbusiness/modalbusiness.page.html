@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="end" (click)="fecharModal()">Fechar</ion-button>
+    <ion-title>Oferta/Procura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #f="ngForm" (ngSubmit)="enviando(f)">
+    <ion-item>
+      <ion-label position="floating">Nome Completo:</ion-label>
+      <ion-input [ngModel] name="nome_completo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Procuro:</ion-label>
+      <ion-input [ngModel] name="procuro"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Telefone para contato:</ion-label>
+      <ion-input [ngModel] name="fone" type="tel"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descrição do proposto:</ion-label>
+      <ion-input [ngModel] name="descricao"></ion-input>
+    </ion-item>
+    <ion-button fill="outline" expand="block" type="submit">Enviar Pedido</ion-button>
+  </form>
+
+</ion-content>
+

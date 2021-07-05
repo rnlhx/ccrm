@@ -1,0 +1,20 @@
+ion-card {
+    ion-card-header {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(0, 174, 255);
+        color: black;
+    }
+    ion-label {
+        white-space: normal;
+    }
+    p {
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+.class-label {
+    text-transform: uppercase;
+}

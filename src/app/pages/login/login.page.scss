@@ -1,0 +1,25 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+ion-butoon[color="dark"] {
+    text-transform: initial;
+}
+
+ion-content {
+    --background: var(--ion-color-primary);
+}
+
+.sizeforget {
+    font-size: 0.8em;
+}
+
+.img-logologin {
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}

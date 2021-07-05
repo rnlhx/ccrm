@@ -1,0 +1,20 @@
+.card-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+ion-card {
+    ion-card-subtitle {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    ion-label {
+        text-transform: uppercase;
+        white-space: normal;
+        font-weight: bold;
+    }
+    p {
+        white-space: normal;
+    }
+}

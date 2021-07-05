@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^gerenciamento_membros/?$ api.php
+RewriteRule ^gerenciamento_membros/([0-9]+)?$ api.php?id=$1

@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="flex-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="primary">360CRM CHURCH</ion-card-title>
+      <img class="img-logologin" src="../../../assets/imgs/logo.png" />
+</ion-card-header>
+<ion-card-content>
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="person"></ion-icon> Usuário</ion-label>
+      <ion-input type="text" required formControlName="username"></ion-input>
+    </ion-item>
+    <ion-label color="danger" *ngIf="form.get('username').touched && form.get('username').errors?.required">Usuário Obrigatório</ion-label>
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon> Senha</ion-label>
+      <ion-input type="password" required formControlName="password"></ion-input>
+    </ion-item>
+    <ion-label color="danger" *ngIf="form.get('password').touched && form.get('password').errors?.required" >Senha Obrigatória</ion-label>
+    <ion-button type="submit" class="ion-margin-top" expand="block" [disabled]="form.invalid">Login</ion-button>
+  </form>
+  </ion-card-content>
+  </ion-card>
+  </div>
+</ion-content>
