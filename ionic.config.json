@@ -1,0 +1,7 @@
+{
+  "name": "ionic-crm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
