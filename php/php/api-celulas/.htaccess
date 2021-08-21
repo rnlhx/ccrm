@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteRule ^celulas/?$ api.php
-RewriteRule ^celulas/([0-9]+)?$ api.php?id=$1
