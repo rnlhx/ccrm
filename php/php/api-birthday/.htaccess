@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteRule ^birthday/?$ api.php
-RewriteRule ^birthday/([0-9]+)?$ api.php?id=$1
